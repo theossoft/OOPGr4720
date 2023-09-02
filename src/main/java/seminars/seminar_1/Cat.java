@@ -8,52 +8,22 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor // Конструктор с аргументами
 @NoArgsConstructor // Конструктор без аргументов
 
-public class Cat {
-    String name;
+public class Cat extends Animal {
     String color;
     int age;
 
-//    public Cat(String name, String color, int age) {
-//        setName(name);
-//        setColor(color);
-//        setAge(age);
-//    }
-//
-//    public Cat() {
-//
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Cat{" +
-//                "name='" + name + '\'' +
-//                ", color='" + color + '\'' +
-//                ", age=" + age +
-//                '}';
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getColor() {
-//        return color;
-//    }
-//
-//    public void setColor(String color) {
-//        this.color = color;
-//    }
-//
-//    public int getAge() {
-//        return age;
-//    }
-//
-//    public void setAge(int age) {
-//        if (age < 0) throw new IllegalArgumentException();
-//        else this.age = age;
-//    }
+    public Cat(String name, String color, int age) {
+        super(name);
+        this.color = color;
+        this.age = age;
+    }
+
+    @Override
+    public void animalInfo() {
+        System.out.println(
+                "Кот "
+                        + super.name
+                        + ". Цвет: " + color
+                        + ". Возраст: " + age);
+    }
 }
