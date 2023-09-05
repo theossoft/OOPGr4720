@@ -5,14 +5,14 @@ public class Program {
         // #region Robot1 demo
 
         //  Robot1 robot1 = new Robot1("name_1", 1)
-        
+
 
         // robot1.level = 100500;
         // System.out.printf("%s %d\n", robot1.name, robot1.level);
 
-         
+
         // //#endregion
-       
+
         // // #region processing
 
         // robot1.startBIOS();
@@ -36,7 +36,7 @@ public class Program {
 
         // System.out.printf("%s %d\n", 
         // robot2.getName(), robot2.getLevel());
-        
+
         // robot2.work();
         // robot2.work();
         // robot2.work();
@@ -55,7 +55,7 @@ public class Program {
         robot3.work();
 
         robot3.power();
-        
+
         //#endregion
     }
 

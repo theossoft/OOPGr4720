@@ -16,17 +16,21 @@ public class Robot3 {
         names = new ArrayList<String>();
     }
 
-    /** Уровень робота */
+    /**
+     * Уровень робота
+     */
     private int level;
 
-    /** Имя робота */
+    /**
+     * Имя робота
+     */
     private String name;
 
     private State state;
 
     /**
      * Создание робота
-     * 
+     *
      * @param name  Имя робота !Не должно начинаться с цифры
      * @param level Уровень робота
      */
@@ -34,11 +38,9 @@ public class Robot3 {
         System.out.println(Character.isDigit(name.charAt(0)));
         if ((name.isEmpty()
                 || Character.isDigit(name.charAt(0)))
-                || Robot3.names.indexOf(name) != -1)
-
-        {
+                || Robot3.names.indexOf(name) != -1) {
             this.name =
-             String.format("DefaultName_%d", defaultIndex++);
+                    String.format("DefaultName_%d", defaultIndex++);
         } else {
             this.name = name;
         }
@@ -120,37 +122,51 @@ public class Robot3 {
         return this.name;
     }
 
-    /** Загрузка BIOS */
+    /**
+     * Загрузка BIOS
+     */
     private void startBIOS() {
         System.out.println("Start BIOS...");
     }
 
-    /** Загрузка OS */
+    /**
+     * Загрузка OS
+     */
     private void startOS() {
         System.out.println("Start OS...");
     }
 
-    /** Приветствие */
+    /**
+     * Приветствие
+     */
     private void sayHi() {
         System.out.println("Hello world...");
     }
 
-    /** Выгрузка BIOS */
+    /**
+     * Выгрузка BIOS
+     */
     private void stopBIOS() {
         System.out.println("Stop BIOS...");
     }
 
-    /** Выгрузка OS */
+    /**
+     * Выгрузка OS
+     */
     private void stopOS() {
         System.out.println("Stop OS...");
     }
 
-    /** Прощание */
+    /**
+     * Прощание
+     */
     private void sayBye() {
         System.out.println("Bye...");
     }
 
-    /** Работа */
+    /**
+     * Работа
+     */
     public void work() {
         if (this.state == State.On) {
             System.out.println("Working...");
