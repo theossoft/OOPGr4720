@@ -24,7 +24,7 @@ public class Main {
         System.out.println(category1);
         System.out.println(appliances);
         Market market = new Market();
-        System.out.println(market.buyProduct(user1));
+
 
     }
 }

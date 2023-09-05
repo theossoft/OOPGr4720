@@ -1,7 +1,7 @@
 package seminars.seminar_1;
 
 public class Animal {
-    String name;
+    protected String name;
 
     public Animal(String name) {
         this.name = name;

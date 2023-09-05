@@ -5,8 +5,8 @@ import java.util.List;
 public class Market {
 
 
-    public static List<Product> buyProduct(User user) {
-        List<Product> buyList = user.getPurchasedGoods();
-        return buyList;
-    }
+//    public static List<Product> buyProduct(User user) {
+//        List<Product> buyList = user.getPurchasedGoods();
+//        return buyList;
+//    }
 }
