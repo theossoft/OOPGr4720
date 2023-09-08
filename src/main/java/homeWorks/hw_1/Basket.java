@@ -9,4 +9,8 @@ public class Basket {
     public Basket(List<Product> purchasedGoods) {
         this.purchasedGoods = purchasedGoods;
     }
+
+    public List<Product> getPurchasedGoods () {
+        return purchasedGoods;
+    }
 }

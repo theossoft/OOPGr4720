@@ -22,9 +22,9 @@ public class Main {
         Basket basket1 = new Basket(appliances);
         User user1 = new User("login", "password", basket1);
         System.out.println(category1);
-        System.out.println(appliances);
-        Market market = new Market();
-
+        System.out.println("До покупок: " + appliances);
+        Market market = new Market(appliances, user1);
+        System.out.println("После покупок: " + appliances);
 
     }
 }

@@ -2,7 +2,7 @@ package homeWorks.hw_1;
 
 import lombok.Data;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Data
