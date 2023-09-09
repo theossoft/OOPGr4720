@@ -4,11 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Basket {
-    List<Product> purchasedGoods;
+    private List<Product> purchasedGoods = new ArrayList<>();
 
-    public Basket(List<Product> purchasedGoods) {
-        this.purchasedGoods = purchasedGoods;
+   public void addToBasketProducts(Product product) {
+       purchasedGoods.add(product);
+   }
+    public void addToBasketProducts(List<Product> products) {
+        purchasedGoods.addAll(products);
     }
+
 
     public List<Product> getPurchasedGoods () {
         return purchasedGoods;
