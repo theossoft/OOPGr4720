@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Shop {
     private List<Product> listOfShopProducts = new ArrayList<>();
-//    private List<Product> listOfBuyingProducts = new ArrayList<>();
     private User user;
     private Basket basket;
 
@@ -27,8 +26,8 @@ public class Shop {
         }
     }
 
-    public void printUsersProducts() {
-
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public void addUser(User user) {
@@ -37,14 +36,7 @@ public class Shop {
     }
 
     public void buyProducts() {
-        for (int i = 0; i < basket.getPurchasedGoods().size(); i++) {
-            for (int j = 0; j < listOfShopProducts.size(); j++) {
-                if ((basket.getPurchasedGoods().get(i)).equals(listOfShopProducts.get(j))) {
-                    basket.addToBasketProducts(listOfShopProducts.get(j));
-                    listOfShopProducts.remove(j);
-                }
-            }
-        }
+        listOfShopProducts.removeAll(basket.getPurchasedGoods());
     }
 }
 
