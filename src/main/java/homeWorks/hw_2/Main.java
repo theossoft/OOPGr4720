@@ -13,14 +13,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Player[] players = {new Robot(), new Human(), new Cat(), new Robot(), new Human(), new Cat()};
         Barriers[] barriers = {new Treadmill(), new Wall(), new Treadmill(), new Wall()};
-        for(Player player : players) {
-            for(Barriers barrier : barriers) {
+        for (Barriers barrier : barriers) {
+            for (Player player : players) {
                 barrier.start(player);
             }
         }
-
     }
 }

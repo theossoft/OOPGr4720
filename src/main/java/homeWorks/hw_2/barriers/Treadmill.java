@@ -6,15 +6,14 @@ import homeWorks.hw_2.players.Player;
 import java.util.Random;
 
 public class Treadmill extends Barriers {
-    private int distance = 25;
+    private int distance;
 
+    private Random r;
 
-//    private Random r;
-
-//    public Treadmill() {
-//        r = new Random();
-//        distance = r.nextInt(0, 200);
-//    }
+    public Treadmill() {
+        r = new Random();
+        distance = r.nextInt(0, 200);
+    }
 
     public int getDistance() {
         return distance;

@@ -2,8 +2,17 @@ package homeWorks.hw_2.barriers;
 
 import homeWorks.hw_2.players.Player;
 
+import java.util.Random;
+
 public class Wall extends Barriers {
-    private int height = 3;
+    private int height;
+
+    private Random r;
+
+    public Wall() {
+        r = new Random();
+        height = r.nextInt(0, 10);
+    }
 
     public int getHeight() {
         return height;
