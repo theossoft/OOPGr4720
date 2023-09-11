@@ -17,7 +17,14 @@ public class Main {
         Barriers[] barriers = {new Treadmill(), new Wall(), new Treadmill(), new Wall()};
         for (Barriers barrier : barriers) {
             for (Player player : players) {
-                barrier.start(player);
+                System.out.print(player + " начал испытание. ");
+                if (!barrier.getFlag()) {
+                    barrier.start(player);
+                } else {
+                    System.out.println("Испытание для " + player + " завершено.");
+                    break;
+                }
+
             }
         }
     }

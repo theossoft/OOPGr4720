@@ -18,12 +18,16 @@ public class Treadmill extends Barriers {
     public int getDistance() {
         return distance;
     }
+    public void updateFlag(boolean flag) {
+        setFlag(flag); // Передача флага родительскому классу
+    }
 
     public void start(Player player) {
         if (player.getDistance() > distance) {
             System.out.println(player + " прошел дистанцию " + distance + " метров.");
         } else {
             System.out.println(player + " не прошел дистанцию " + distance + " метров.");
+            updateFlag(true);
         }
     }
 }
