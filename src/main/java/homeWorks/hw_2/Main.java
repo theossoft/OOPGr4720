@@ -12,18 +12,15 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Player robot = new Robot();
-        Player human = new Human();
-        Player cat = new Cat();
-        Treadmill treadmill = new Treadmill();
-        Wall wall = new Wall();
 
-        treadmill.start(robot);
-        treadmill.start(human);
-        treadmill.start(cat);
-        wall.start(robot);
-        wall.start(human);
-        wall.start(cat);
+
+        Player[] players = {new Robot(), new Human(), new Cat(), new Robot(), new Human(), new Cat()};
+        Barriers[] barriers = {new Treadmill(), new Wall(), new Treadmill(), new Wall()};
+        for(Player player : players) {
+            for(Barriers barrier : barriers) {
+                barrier.start(player);
+            }
+        }
 
     }
 }
