@@ -1,4 +1,4 @@
-package Lesson_08.Ex004;
+package lections.lection_2.Ex004;
 
 public class Druid extends BaseHero {
 

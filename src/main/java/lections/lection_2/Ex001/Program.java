@@ -1,4 +1,4 @@
-package Lesson_08.Ex001;
+package lections.lection_2.Ex001;
 
 import java.util.ArrayList;
 import java.util.List;
