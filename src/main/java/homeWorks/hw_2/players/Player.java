@@ -13,9 +13,4 @@ public abstract class Player {
         return height;
     }
 
-
-//    public Player(int distance, int height) {
-//        this.distance = distance;
-//        this.height = height;
-//    }
 }
