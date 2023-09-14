@@ -1,6 +1,8 @@
 package homeWorks.hw_3;
 
+import homeWorks.hw_3.gameType.EnGame;
 import homeWorks.hw_3.gameType.NumGame;
+import homeWorks.hw_3.gameType.RuGame;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +42,6 @@ public class Main {
             } else {
                 System.out.println("Введите 1 или 2");
             }
-
         } while (true);
-
     }
 }
