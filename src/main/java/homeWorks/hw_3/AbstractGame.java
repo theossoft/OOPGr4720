@@ -25,7 +25,7 @@ public abstract class AbstractGame implements Game {
         return result;
     }
 
-    abstract List<String> generateCharList();
+    protected abstract List<String> generateCharList();
 
     @Override
     public void start(Integer sizeWord, Integer maxTry) {

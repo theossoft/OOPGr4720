@@ -1,7 +1,7 @@
 package homeWorks.hw_3;
 
 public interface Game {
-    void start(Integer sezeWord, Integer maxTry);
+    void start(Integer sizeWord, Integer maxTry);
 
     Answer inputValue(String value);
 
