@@ -1,6 +1,17 @@
 package homeWorks.hw_4;
 
 public class Teacher extends User {
+    private int rating;
+    private int age;
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
     private String objectToTeach;
 
     public String getObjectToTeach() {
@@ -18,8 +29,10 @@ public class Teacher extends User {
                 '}';
     }
 
-    public Teacher(String name, String objectToTeach) {
+    public Teacher(String name, int rating, int age) {
         super(name);
+        this.rating = rating;
+        this.age = age;
         this.objectToTeach = objectToTeach;
     }
 
