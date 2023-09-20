@@ -1,6 +1,7 @@
-package Lesson_08.Ex006.Interface;
+package lections.lection_2.Ex006.Interface;
 
-import Lesson_08.Ex006.Document.TextDocument;
+
+import lections.lection_2.Ex006.Document.TextDocument;
 
 public interface Saveable {
     void SaveAs(TextDocument document, String path);

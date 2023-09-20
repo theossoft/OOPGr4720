@@ -1,9 +1,11 @@
-package Lesson_08.Ex006.Format;
+package lections.lection_2.Ex006.Format;
+
+import lections.lection_2.Ex006.Document.TextDocument;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
-import Lesson_08.Ex006.Document.TextDocument;
+
 
 public class Doc extends TextFormat {
     
