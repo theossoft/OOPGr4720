@@ -27,6 +27,9 @@ public class Contact {
         this.description = description;
     }
 
+    public Contact() {
+    }
+
     public LocalDate getDate() {
         return date;
     }

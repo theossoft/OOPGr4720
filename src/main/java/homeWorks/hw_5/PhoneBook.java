@@ -4,11 +4,11 @@ package homeWorks.hw_5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Phonebook {
+public class PhoneBook {
 
     private List<Contact> contacts;
     
-    public Phonebook() {
+    public PhoneBook() {
         contacts = new ArrayList<Contact>();
     }
 

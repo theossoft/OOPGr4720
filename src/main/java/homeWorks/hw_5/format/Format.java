@@ -1,6 +1,4 @@
-package homeWorks.hw_5;
-
-import homeWorks.hw_5.view.Loadable;
+package homeWorks.hw_5.format;
 
 public abstract class Format implements Saveable, Loadable {
 }
